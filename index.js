@@ -45,7 +45,6 @@ bot.on('text',(msg) => {
 
             bot.sendMessage(chatId, sobre)
         
-
 }
 
     
@@ -63,17 +62,16 @@ bot.on('text',(msg) => {
     if(msg.text == "/menu")
 
     //criando menu com botoes
-    bot.sendMessage(msg.chat.id, "Menu do bot:" ,{
-    
+    bot.sendMessage(msg.chat.id, "Menu do bot:" ,{"reply_markup":{
     "keyboard": [["/imagem", "/audio", "/local","/sobre"],["/menu","/ban","/scan"],["/mudarImagemGrupo"]]    
-    });
+    }});
 
     if (msg.text == "/local") {
 
         //enviando localizaçao com a latitude e longitude
         bot.sendLocation(msg.chat.id, 38.898218, -77.036388);
         //enviando uma menssagem com as informaçoes do endereço
-        bot.sendMessage(msg.chat.id, "Esta e a Endereço exato da Casa Branca!\n\ Cordenadas: 38.898218, -77.036388\n\ Edereço:Pennsylvania Avenue NW, Washington, DC 20502, EUA");
+        bot.sendMessage(msg.chat.id, "Esta e a Endereço exato da Casa Branca!\nCordenadas: 38.898218, -77.036388\nEdereço:Pennsylvania Avenue NW, Washington, DC 20502, EUA");
 
     }
 
