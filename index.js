@@ -7,7 +7,7 @@ const { from } = require('form-data');
 const telegramBot = require('node-telegram-bot-api')
 
 //coloque o token do seu bot que voce pegou no botfather
-const token = '5125492606:AAEii97ydGkPkdvlL9PaYLRbUiZNH82K5C0';
+const token = 'SEU_TOKEN_AQUI';
 
 //criando o bot
 const bot = new telegramBot(token , { polling : true} )
