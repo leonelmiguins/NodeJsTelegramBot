@@ -1,4 +1,4 @@
-# Bot para Telegram com Node.js
+# BOT TELEGRAM COM NODE.JS
 
 Exemplo de bot para Telegram feito em Node.js usando a Api node-telegam-bot-api.
 
